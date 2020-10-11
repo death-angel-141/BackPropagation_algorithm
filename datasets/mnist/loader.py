@@ -3,7 +3,7 @@ import numpy as np
 
 
 def get_data():
-    mndata = MNIST('../app/notebooks/datasets/mnist/data_files')
+    mndata = MNIST('/content/datasets/mnist/data_files')
     mndata.gz = True
     images, labels = mndata.load_training()
     train_x = np.array(images)
